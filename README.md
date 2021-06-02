@@ -1,17 +1,22 @@
 # Fashion MNIST Classification
 
-This project focuses on an exploratory analysis of Convolutional Neural Networks (CNN) in classification of clothing items, found in a variant of the famous MNIST dataset.
+An exploratory analysis of Convolutional Neural Networks (CNN) for classification of clothing items from the fashion variant of the famous MNIST dataset. A diverse set of techniques were employed in hyperparameter tuning, a few examples are:
+* Early stopping
+* GridSearchCV
+* Learning decay schedulers
+* Dropout layers
+* Optimizers and variants
+* Kernel initializations
+* Altering stride, size, # of filters
+* Varying depth and width of CNN
 
-## Optimal Model
-
-### Metrics
+### Best Performance Achieved
 |           |  Training |  Validation | Testing |
 |-----------|-----------|-------------|---------|
 | Accuracy  |   0.980   | 0.924       |  0.924  |
 | Loss      |   0.0596  | 0.223       |  0.243  |
 
-
-### Architecture 
+### Optimal Architecture 
 * 1 Convolution Layer: 32 filters of 5x5, stride 1
 * 1 Max Pooling Layer: 3x3 pool, stride 1
 * 1 Convolution Layer: 32 filters of 5x5, stride 1
